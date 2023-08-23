@@ -1,10 +1,16 @@
-/**
-* Template Name: Yummy
-* Updated: Jul 27 2023 with Bootstrap v5.3.1
-* Template URL: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+document.addEventListener("DOMContentLoaded", function() {
+  const mobileNavShow = document.querySelector(".mobile-nav-show");
+  const mobileNavHide = document.querySelector(".mobile-nav-hide");
+  const navbar = document.querySelector(".navbar");
+
+  mobileNavShow.addEventListener("click", function() {
+    navbar.classList.add("active");
+  });
+
+  mobileNavHide.addEventListener("click", function() {
+    navbar.classList.remove("active");
+  });
+});
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
