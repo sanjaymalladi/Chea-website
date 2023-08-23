@@ -25,7 +25,6 @@
     <link rel="stylesheet" href="assets/css/vendor/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/css/main.css">
     <link rel="stylesheet" href="assets/css/Animated-Type-Heading.css">
-    <script src="https://assets.frms.link/bundles/scripts/live/us/embed.js"></script>
 </head>
 
 <body>
@@ -118,9 +117,15 @@
                 </div>
             </div>
             <div class="row d-flex justify-content-center">
-                <div id="YOUR_DIV_ID">
-                    <script>new makeforms.Embed({ sourceId: "64e61cde9a0399fb74ae8468", root: "YOUR_DIV_ID"  }).build()</script>
-                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div>
+                        <form class="p-3 p-xl-4" method="post" data-bs-theme="light">
+                            <div class="mb-3"><input class="form-control" type="text" id="name-1" name="name" placeholder="Name"></div>
+                            <div class="mb-3"><input class="form-control" type="email" id="email-1" name="email" placeholder="Email"></div>
+                            <div class="mb-3"><textarea class="form-control" id="message-1" name="message" rows="6" placeholder="Message"></textarea></div>
+                            <div><button class="btn btn-primary shadow d-block w-100" type="submit">Send </button></div>
+                        </form>
+                    </div>
                 <div class="col-md-4 col-xl-4 d-flex justify-content-center justify-content-xl-start">
                     <div class="d-flex flex-wrap flex-md-column justify-content-md-start align-items-md-start h-100">
                         <div class="d-flex align-items-center p-3">
