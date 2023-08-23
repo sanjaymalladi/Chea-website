@@ -1,16 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-  const mobileNavShow = document.querySelector(".mobile-nav-show");
-  const mobileNavHide = document.querySelector(".mobile-nav-hide");
-  const navbar = document.querySelector(".navbar");
-
-  mobileNavShow.addEventListener("click", function() {
-    navbar.classList.add("active");
-  });
-
-  mobileNavHide.addEventListener("click", function() {
-    navbar.classList.remove("active");
-  });
-});
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
