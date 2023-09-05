@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', navbarlinksActive);
   document.addEventListener('scroll', navbarlinksActive);
 
-  /**
+ /**
  * Mobile nav toggle
  */
 const mobileNavShow = document.querySelector('.mobile-nav-show');
@@ -55,26 +55,32 @@ const mobileNavHide = document.querySelector('.mobile-nav-hide');
 document.querySelectorAll('.mobile-nav-toggle').forEach(el => {
   el.addEventListener('click', function(event) {
     event.preventDefault();
-    mobileNavToggle(); // Corrected function name
-  })
+    mobileNavToggle();
+  });
 });
+
+let isMobileNavOpen = false; // Track the state of the mobile nav
 
 function mobileNavToggle() {
   document.querySelector('body').classList.toggle('mobile-nav-active');
   mobileNavShow.classList.toggle('d-none');
   mobileNavHide.classList.toggle('d-none');
+  isMobileNavOpen = !isMobileNavOpen; // Toggle the state
 }
 
 /**
- * Close mobile nav when a link is clicked
+ * Close mobile nav when the same menu icon is clicked
  */
-document.querySelectorAll('#navbar a').forEach(navbarlink => {
-  navbarlink.addEventListener('click', () => {
-    if (document.querySelector('.mobile-nav-active')) {
-      mobileNavToggle();
+document.querySelectorAll('.mobile-nav-toggle').forEach(el => {
+  el.addEventListener('click', function(event) {
+    if (isMobileNavOpen) {
+      mobileNavToggle(); // Close the mobile nav if it's open
     }
   });
 });
+
+// ...
+  
 
   /**
    * Toggle mobile nav dropdowns
