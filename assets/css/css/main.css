@@ -1207,8 +1207,9 @@ button {
   border: none;
   cursor: pointer;
 }
-
-
+button:hover {
+  background-color: #0056b3;
+}
 @keyframes animate-loading {
   0% {
     transform: rotate(0deg);
