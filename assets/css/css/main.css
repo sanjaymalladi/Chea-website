@@ -325,7 +325,9 @@ section {
   line-height: 0;
   margin-left: 5px;
 }
-
+.navbar-toggler-icon {
+      color: white !important;
+}
 /* Desktop Styles */
 @media (min-width: 1280px) {
   .navbar {
