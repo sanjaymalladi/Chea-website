@@ -394,51 +394,7 @@ section {
   /* ... Continue with the rest of the styles ... */
 }
 
-/* Mobile Styles */
 
-@media (max-width: 1279px) {
-  .navbar {
-    @media (max-width: 1279px) {
-  .navbar ul {
-    display: none;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    z-index: 1000;
-  }
-
-  .navbar.active ul {
-    display: block;
-  }
-
-  .mobile-nav-show,
-  .mobile-nav-hide {
-    display: block;
-  }
-}
-JavaScript (script.js):
-javascript
-Copy code
-document.addEventListener("DOMContentLoaded", function() {
-  const mobileNavShow = document.querySelector(".mobile-nav-show");
-  const mobileNavHide = document.querySelector(".mobile-nav-hide");
-  const navbar = document.querySelector(".navbar");
-
-  mobileNavShow.addEventListener("click", function() {
-    navbar.classList.add("active");
-  });
-
-  mobileNavHide.addEventListener("click", function() {
-    navbar.classList.remove("active");
-  });
-});
-    /* Define mobile styles here */
-  }
-
-  /* ... Continue with the rest of the styles ... */
-}
 
 /* Additional styles for specific breakpoints */
 @media (min-width: 1280px) and (max-width: 1366px) {
