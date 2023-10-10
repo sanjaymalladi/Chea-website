@@ -296,6 +296,7 @@ dl dd {
 #whatsapp-button {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	max-width: 300px; /* Set a maximum width for the button container */
 	width: 100%; /* Ensure the button container takes the full width within the specified maximum */
 	padding: 10px 20px;
